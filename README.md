@@ -12,8 +12,18 @@ composer require pepa-linha/nette-inertia
 
 Extends your presenter
 
-```
+```php
 class BasePresenter extends InertiaPresenter
 ```
 
-and then use `$this->inertia(...)` method to send page object.
+and then use `$this->inertia(...)` method in your presenters to send page object response.
+
+By default Inertia page component name is the same like presenter name. You can change it by override
+`getInertiaComponentName` method.
+
+Set the default state of the Inertia application with `$inertiaPageObject` in template:
+
+```latte
+<div id="app" data-page='{$inertiaPageObject|noescape}'></div>
+```
+
