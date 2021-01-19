@@ -1,0 +1,20 @@
+{
+    "name": "pepa-linha/nette-inertia",
+    "type": "library",
+    "description": "The Nette adapter for Inertia.js.",
+    "keywords": ["nette", "inertia", "javascript"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "nette/application": "^3.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "authors": [
+        {
+            "name": "Pepa Linha",
+            "email": "josef.linha@gmail.com"
+        }
+    ]
+}
